@@ -1,0 +1,24 @@
+channel...
+
+S 19 N 14 A 1 P 16
+
+  S19 * 26^3
++ N14 * 26^2
++ A01 * 26^1
++ P16 * 26*0
+
+channel is -343460
+
+comm protocol: ([a] applier hud [t] target object)
+[a] (llRegionSayTo to owner) /-343460SNAP-GET|<target name>|<applier name>
+[t] (sets remote load pin to random number)
+[t] (to querying object) /-343460SNAP-APPLY|<target name>|<applier name>|<pin>|<schema URL>
+[a] (remoteloads into target linkset with startparam != 0)
+[a] (to target) /-343460SNAP-START|<schema URL>
+
+to query: /-343460SNAP-PING
+response: SNAP-PONG|<target name>
+
+
+examples:
+target name: KoboldBody
