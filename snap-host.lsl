@@ -1,4 +1,5 @@
-string snap_targetName = "ONAKoboldBody";
+// ONA Kobold used for testing and example
+string snap_targetName = "ONA.Kobold.Body"; // for nonstandardzed UVs: Brand.Avatar.Component
 string snap_schemaURL = "https://github.com/Kirifloof/sl-snap/raw/master/schema/ONA-Kobold0.06.json";
 
 default {
